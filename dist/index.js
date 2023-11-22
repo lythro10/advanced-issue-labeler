@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -37116,7 +37117,7 @@ function getOctokit(token) {
     var _a;
     return new CustomOctokit({
         request: {
-            fetch
+            fetch: node-fetch,
         },
         auth: token,
         baseUrl: (_a = process.env.GITHUB_API_URL) !== null && _a !== void 0 ? _a : 'https://api.github.com',
