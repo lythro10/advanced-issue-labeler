@@ -9,5 +9,6 @@ export function getOctokit(token: string) {
   return new CustomOctokit({
     auth: token,
     baseUrl: process.env.GITHUB_API_URL ?? 'https://api.github.com',
+    node: node16,
   });
 }
